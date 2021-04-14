@@ -1,0 +1,29 @@
+# development instance for Postgres
+
+version: "3"
+services:
+  postgres:
+    image: "postgres:12.4-alpine"
+    environment:
+      POSTGRES_DB: "db"
+      POSTGRES_USER: "bruce_wayne"
+      POSTGRES_PASSWORD: "i_am_batman"
+    container_name: "postgres"
+    ports:
+      - "5432:5432"
+    volumes:
+      - /Users/jschnaidt/docker/postgres:/var/lib/postgresql/data
+  mysql:
+    image: mysql:8.0.23
+    environment:
+      MYSQL_DATABASE: "db"
+      MYSQL_USER: "bruce_wayne"
+      MYSQL_PASSWORD: "i_am_batman"
+      MYSQL_ROOT_PASSWORD: "passw0rd"
+    container_name: "mysql"
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    volumes:
+      - /Users/jschnaidt/docker/mysql:/var/lib/mysql
