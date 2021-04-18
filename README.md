@@ -31,7 +31,7 @@ To stop the databases switch into the directory containing the file and simply u
 
 The command stops and removes resources of the containers. 
 
-##Manage Docker Volumes
+## Manage Docker Volumes
 
 With the commands
 
