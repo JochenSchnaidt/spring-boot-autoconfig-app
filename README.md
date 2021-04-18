@@ -1,6 +1,9 @@
 # spring-boot-autoconfig-app
 Application which makes use of the pre-packaged, autoconfigured artifact.
 
+The library is located in the separate repository https://github.com/JochenSchnaidt/spring-boot-autoconfig-db
+
+
 ## Run Databases
 
 The application makes use of two separate databases.
